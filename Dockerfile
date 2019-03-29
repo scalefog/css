@@ -20,5 +20,5 @@ ENV CSS_HOSTNAME Counter-Strike Source Dedicated Server
 
 ADD ./entrypoint.sh entrypoint.sh
 RUN ln -s /home/steam/linux32/ /home/steam/.steam/sdk32
-
+RUN chmod +x entrypoint.sh
 CMD ./entrypoint.sh
